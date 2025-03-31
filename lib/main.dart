@@ -12,6 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+			title: 'Food Waste Reduce App',
+			// home: const MyHomePage(title: 'Waste Reduce App Home Page'),
 			debugShowCheckedModeBanner: false,
       home: BottomNavBar()
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:waste_reduce_app/screens/home_screen.dart';
-import 'package:waste_reduce_app/screens/search_screen.dart';
+import 'package:waste_reduce_app/screens/create_recipe_screen.dart';
 import 'package:waste_reduce_app/screens/profile_screen.dart';
 import 'package:waste_reduce_app/screens/recipes_screen.dart';
 import 'package:waste_reduce_app/screens/settings_screen.dart';
@@ -16,7 +16,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 	final List _screenList = [
 		HomeScreen(),
 		RecipesScreen(),
-		SearchScreen(),
+		CreateRecipeScreen(),
 		ProfileScreen(),
 		SettingsScreen(),
 	];
@@ -50,8 +50,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
 					),
 
 					BottomNavigationBarItem(
-						icon: Icon(Icons.search),
-						label: 'Search',
+						icon: Icon(Icons.add_circle),
+						label: 'Create',
 					),
 
 					BottomNavigationBarItem(
