@@ -17,6 +17,17 @@ class RecipesScreen extends StatelessWidget {
 			body: ListView(
 				padding: EdgeInsets.all(12),
 				children: [
+					Container(
+						margin: EdgeInsets.only(bottom: 10),
+						child: TextField(
+							decoration: InputDecoration(
+								labelText: 'Search Recipes',
+								border: OutlineInputBorder(),
+								suffixIcon: Icon(Icons.search),
+							),
+						),
+					),
+
 					Row(
 						children: [
 							Expanded(
@@ -31,7 +42,7 @@ class RecipesScreen extends StatelessWidget {
 										
 									),
 									child: Center(
-										child: Text('Category 1'),
+										child: Text('Popular'),
 									),
 								),
 							),
@@ -48,7 +59,7 @@ class RecipesScreen extends StatelessWidget {
 										
 									),
 									child: Center(
-										child: Text('Category 2'),
+										child: Text('Latest'),
 									),
 								),
 							),

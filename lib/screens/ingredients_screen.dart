@@ -25,7 +25,8 @@ class IngredientsScreen extends StatelessWidget {
 								),
 
 								Text(
-									"Your Ingredients is Empty"
+									"Your Ingredient List is Empty.\nAdd some ingredients to get started!",
+									textAlign: TextAlign.center,
 								),
 						
 								ElevatedButton(
