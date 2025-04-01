@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CreateRecipeScreen extends StatelessWidget {
-  const CreateRecipeScreen({super.key});
+class IngredientsScreen extends StatelessWidget {
+  const IngredientsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class CreateRecipeScreen extends StatelessWidget {
 			appBar: AppBar(
 				centerTitle: true,
 				backgroundColor: Colors.teal[200],
-				title: Text('Create Recipe'),
+				title: Text('Ingredients'),
 			),
 			body: Expanded(
 				child: Container(

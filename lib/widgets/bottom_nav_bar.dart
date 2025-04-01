@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:waste_reduce_app/screens/home_screen.dart';
-import 'package:waste_reduce_app/screens/create_recipe_screen.dart';
+import 'package:waste_reduce_app/screens/ingredients_screen.dart';
 import 'package:waste_reduce_app/screens/profile_screen.dart';
 import 'package:waste_reduce_app/screens/recipes_screen.dart';
-import 'package:waste_reduce_app/screens/settings_screen.dart';
+import 'package:waste_reduce_app/screens/expiry_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -16,9 +16,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
 	final List _screenList = [
 		HomeScreen(),
 		RecipesScreen(),
-		CreateRecipeScreen(),
+		IngredientsScreen(),
+		ExpiryScreen(),
 		ProfileScreen(),
-		SettingsScreen(),
 	];
 
 	int _selectedIndex = 0;
@@ -45,13 +45,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
 					),
 
 					BottomNavigationBarItem(
-						icon: Icon(Icons.menu_book_rounded),
+						icon: Icon(Icons.restaurant_menu),
 						label: 'Recipes',
 					),
 
 					BottomNavigationBarItem(
-						icon: Icon(Icons.add_circle),
-						label: 'Create',
+						icon: Icon(Icons.kitchen),
+						label: 'Ingredients',
+					),
+
+					BottomNavigationBarItem(
+						icon: Icon(Icons.access_time_filled),
+						label: 'Expiry',
 					),
 
 					BottomNavigationBarItem(
@@ -59,10 +64,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
 						label: 'Profile',
 					),
 
-					BottomNavigationBarItem(
-						icon: Icon(Icons.settings),
-						label: 'Settings',
-					)
 				],
 				currentIndex: _selectedIndex,
 				onTap: _changeScreen ,

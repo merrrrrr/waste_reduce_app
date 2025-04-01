@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class ExpiryScreen extends StatelessWidget {
+  const ExpiryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,10 +9,10 @@ class HomeScreen extends StatelessWidget {
 			appBar: AppBar(
 				centerTitle: true,
 				backgroundColor: Colors.teal[200],
-				title: Text('Home'),
+				title: Text('Expiry Tracker'),
 			),
 			body: Center(
-				child: Text('Home Screen'),
+				child: Text('Expiry Screen'),
 			),
 		);
   }
