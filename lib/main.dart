@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:waste_reduce_app/firebase_options.dart';
+import 'package:waste_reduce_app/screens/login_screen.dart';
 import 'package:waste_reduce_app/widgets/bottom_nav_bar.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async{
+	WidgetsFlutterBinding.ensureInitialized();
+	await Firebase.initializeApp(
+		options: DefaultFirebaseOptions.currentPlatform,
+	);
   runApp(MyApp());
 }
 
@@ -13,9 +21,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 			title: 'Food Waste Reduce App',
-			// home: const MyHomePage(title: 'Waste Reduce App Home Page'),
 			debugShowCheckedModeBanner: false,
-      home: BottomNavBar()
+      home: BottomNavBar(),
     );
   }
 }

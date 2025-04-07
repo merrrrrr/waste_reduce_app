@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "642207065144",
+    "project_id": "reduce-waste-app-ddc36",
+    "storage_bucket": "reduce-waste-app-ddc36.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642207065144:android:92149a0d4e1bcc8e09b2cd",
+        "android_client_info": {
+          "package_name": "com.example.waste_reduce_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_kUpR-C1w7FLMALHlg5QzeuDFLYxT5fI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
